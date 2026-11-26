@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:kiraaya_app/screen/signup_screen.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -197,7 +198,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   const SizedBox(width: 8),
                   GestureDetector(
                     onTap: () {
-                      print('Sign up screen');
+                      Navigator.push(context, MaterialPageRoute(builder: (context)=> SignupScreen()));
                     },
                     child: const Text(
                       'Sign up',
